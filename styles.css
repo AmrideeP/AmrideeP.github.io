@@ -116,17 +116,11 @@
   cursor: pointer;
   display: none;
 }
-
-/* About part Styling */
+/* All Similar Styling Code */
 section {
   padding: 100px 0;
 }
-.about {
-  background: none center;
-  font-family: "Poppins", sans-serif;
-}
-
-.about .title {
+section .title {
   position: relative;
   font-family: "Ubuntu", sans-serif;
   text-align: center;
@@ -136,7 +130,7 @@ section {
   padding-bottom: 20px;
 }
 
-.about .title::before {
+section .title::before {
   content: "";
   bottom: 0px;
   left: 50%;
@@ -146,7 +140,16 @@ section {
   background: #111;
   transform: translateX(-50%);
 }
-.about .about-content {
+/* About part Styling */
+
+.about,
+.services {
+  background: none center;
+  font-family: "Poppins", sans-serif;
+}
+
+.about .about-content,
+.services .serv-content {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -187,6 +190,53 @@ section {
   color: crimson;
   background: none;
 }
+
+/* Services Part Styling  */
+
+.services {
+  background: #111;
+  color: #fff;
+}
+
+.services .serv-content .card {
+  width: calc(33% - 30px);
+  background: #222;
+  text-align: center;
+  border-radius: 6px;
+  padding: 20px 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.services .serv-content .card .box {
+  transition: all 0.3s ease;
+}
+.services .serv-content .card:hover {
+  background: crimson;
+}
+
+.services .serv-content .card:hover svg {
+  color: #fff;
+}
+.services .serv-content .card:hover .box {
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+.services .serv-content .card svg {
+  font-size: 25px;
+  color: crimson;
+}
+.services .serv-content .card .text {
+  font-size: 20px;
+  margin: 10px 0 7px 0;
+  font-weight: 500;
+}
+.services .serv-content .card p {
+  font-size: 13px;
+  text-align: justify;
+}
+
+/* Services Styling END  */
 
 /* Responsive Media Queries */
 @media (max-width: 991px) {
@@ -248,6 +298,9 @@ section {
   }
   .about .about-content .right a:nth-child(odd) {
     margin-left: 20%;
+  }
+  .services .serv-content .card {
+    width: 100%;
   }
 }
 @media (max-width: 576px) {
