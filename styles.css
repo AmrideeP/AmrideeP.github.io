@@ -140,14 +140,14 @@ section .title::before {
   background: #111;
   transform: translateX(-50%);
 }
-/* About part Styling */
-
 .about,
 .services,
-.skills {
+.skills,
+.teams {
   background: none center;
   font-family: "Poppins", sans-serif;
 }
+/* About part Styling */
 
 .about .about-content,
 .services .serv-content,
@@ -195,7 +195,8 @@ section .title::before {
 
 /* Services Part Styling  */
 
-.services {
+.services,
+.teams {
   background: #111;
   color: #fff;
 }
@@ -290,10 +291,100 @@ section .title::before {
 .skills-content .right .Power::before {
   width: 85%;
 }
+.services .title::before,
+.teams .title::before {
+  background: #fff;
+}
 
 /* Skills Styling end */
 
+/* Projects styling Start */
+.teams .carousel .card {
+  color: #fff;
+  background: #222;
+  border-radius: 6px;
+  padding: 25px 35px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.teams .carousel .card img {
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid crimson;
+  transition: all 0.3s ease;
+}
+.teams .carousel .card .text {
+  font-size: 25px;
+  font-weight: 500;
+  margin: 10px 0 7px 0;
+}
+
+.teams .carousel .card .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+.teams .carousel .card:hover {
+  background: crimson;
+}
+.teams .carousel .card:hover img {
+  border-color: #fff;
+}
+.teams .carousel .card:hover .box {
+  transform: scale(1.05);
+}
+.teams .carousel .card .box a {
+  display: inline-block;
+  background-color: crimson;
+  color: #fff;
+  padding: 3px 7px;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-right: 30px;
+  border-radius: 6px;
+  border: 2px solid crimson;
+  transition: all 0.3s ease;
+  align-items: center;
+  font-weight: 500;
+}
+
+.teams .carousel .card:hover a {
+  background: #222;
+  border: 2px inset crimson;
+}
+
+.owl-dots {
+  text-align: center;
+  margin-top: 20px;
+}
+.owl-dot {
+  height: 13px;
+  width: 13px;
+  outline: none !important;
+  border-radius: 50%;
+  border: 2px solid crimson !important;
+  margin: 0 5px;
+}
+
+.owl-dot.active {
+  width: 35px;
+  border-radius: 14px;
+}
+.owl-dot.active,
+.owl-dot:hover {
+  background: crimson !important;
+}
 /* Responsive Media Queries */
+@media (max-width: 1300px) {
+  .home .max-width {
+    margin-left: 0px;
+  }
+}
 @media (max-width: 991px) {
   .max-width {
     padding: 0 50px;
