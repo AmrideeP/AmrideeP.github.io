@@ -18,6 +18,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link type="text/css" rel="stylesheet" href="./waitMe Spinner/waitMe.min.css">
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("user_9A3V1tcPxeCRDCWUsZDqa");
+      })();
+    </script>
   </head>
   <body>
     <div>
@@ -50,7 +60,7 @@
             <div class="text-3">
               And I am a <span> Software Developer.</span>
             </div>
-            <a href="#">Hire Me</a>
+            <a href="#contact">Hire Me</a>
           </div>
         </div>
       </section>
@@ -241,12 +251,81 @@
             </div>
           </div>
         </div>
-        
+      </section>
+      <!-- Contact Section -->
+      <section class="contact" id="contact">
+        <div class="max-width">
+          <h2 class="title">Contact Me</h2>
+          <div class="contact-content">
+            <div class="column left">
+              <div class="text">
+                Get In Touch
+              </div>
+              <p>Please drop me an email if you like my email. I am open to Software Engineer, Power Platform Developer Roles.</p>
+              <div class="icons">
+                <div class="row">
+                  <i class="fas fa-user"></i>
+                  <div class="info">
+                    <div class="head">
+                      Name
+                    </div>
+                    <div class="sub-title">
+                      Amrideep Baksi
+                    </div>
+                  </div>
+                </div>
 
+                <div class="row">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <div class="info">
+                    <div class="head">
+                      Address
+                    </div>
+                    <div class="sub-title">
+                      Kolkata , India
+                    </div>
+                  </div>
+                </div>
 
+                <div class="row">
+                  <i class="fas fa-envelope"></i>
+                  <div class="info">
+                    <div class="head">
+                      Email
+                    </div>
+                    <div class="sub-title">
+                      abaksi57@email.com
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="column right">
+              <div class="text">Message Me</div>
+              <form action="#contact" id="contactForm">
+                <div class="fields">
+                  <div class="field name">
+                    <input type="text" placeholder="Name" name="name" required>
+                  </div>
+                  <div class="field email">
+                    <input type="email" placeholder="Email" name="email" required>
+                  </div>
+                </div>  
+                  <div class="field textarea">
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                  </div>
+                  <div class="button">
+                    <button type="submit" id="contactFormSubmit" >Send Message</button>
+                  </div>
+              </form>
+            </div>
+          </div>
+        </div>
       </section>
       <p></p>
     </div>
+    <script src="./waitMe Spinner/waitMe.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
